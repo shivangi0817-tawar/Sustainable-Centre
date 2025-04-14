@@ -1,0 +1,826 @@
+
+/** Styling for the navbar **/
+.navbar {
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  height: 50px;
+  width: 60%;
+}
+
+.nav img:hover {
+  border: 4px solid rgb(81, 168, 230);
+}
+
+.nav img {
+  height: 80px;
+  width: 100%;
+  transition: ease-in-out 0.1s;
+}
+
+.logo img:hover {
+  border: 4px solid black;
+}
+.logo img {
+  transition: ease-in-out 0.1s;
+  height: 80px;
+  width: 25%;
+}
+
+.panel {
+  height: 40px;
+  background-color: rgb(2, 26, 7);
+  display: flex;
+  color: white;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 18px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  transition: ease-in-out 0.5s;
+}
+
+.dropdown-content::-webkit-scrollbar {
+  width: 8px;
+}
+
+.dropdown-content::-webkit-scrollbar-thumb {
+  background-color: #ccc;
+  border-radius: 4px;
+}
+
+.dropdown-content::-webkit-scrollbar-thumb:hover {
+  background-color: #aaa;
+}
+
+
+.panel:hover {
+  border: 6px solid red;
+}
+
+.panel a {
+  color: white;
+}
+
+.dropdown {
+  overflow: hidden;
+ 
+}
+
+.dropdown .dropbtn {
+  font-size: 18px;
+  border: none;
+  outline: none;
+  color: white;
+  background-color: inherit;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+    padding: 10px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  width:auto; 
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+ 
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-content:hover {
+  background-color: rgba(81, 168, 230, 0.941);
+}
+
+.poverty:hover {
+  background-color: red;
+  color: white;
+}
+
+.hunger:hover {
+  background-color: #e2b54f;
+  color: white;
+}
+
+.health:hover {
+  background-color: #43b14b;
+  color: white;
+}
+
+.education:hover {
+  background-color: #bc1823;
+  color: white;
+}
+
+.gender:hover {
+  background-color: #ed5f1e;
+  color: white;
+}
+
+.water:hover {
+  background-color: #4fc8dc;
+  color: white;
+}
+
+.energy:hover {
+  background-color: #fad02c;
+  color: white;
+}
+
+.work:hover {
+  background-color: #6a0f07;
+  color: white;
+}
+
+.industry:hover {
+  background-color: orange;
+  color: white;
+}
+
+.inequality:hover {
+  background-color: #de0684;
+  color: white;
+}
+
+.cities:hover {
+  background-color: #ffa500;
+  color: white;
+}
+
+.production:hover {
+  background-color: #e2b54f;
+  color: white;
+}
+
+.climate:hover {
+  background-color: #32620e;
+  color: white;
+}
+
+.life:hover {
+  background-color: #1893f8;
+  color: white;
+}
+
+.land:hover {
+  background-color: #16a637;
+  color: white;
+}
+
+.peace:hover {
+  background-color: #145da0;
+  color: white;
+}
+
+.goals:hover {
+  background-color: #051d40;
+  color: white;
+}
+
+/** Styling for the objectives **/
+.heading {
+  position: relative;
+}
+
+.heading p {
+  text-align: justify;
+  font-size: 130px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: rgb(255, 255, 255);
+  position: relative;
+  padding: 9px;
+  transition: transform ease-in-out 0.25s;
+  font-weight: bolder;
+  animation: scaleAnimation 4s ease-in-out infinite;
+background-color: rgba(0, 0, 0, 0.282);
+}
+
+.heading p:hover {
+  color: rgb(161, 244, 190);
+}
+
+
+@keyframes scaleAnimation {
+  0% {
+    transform: scale(1); 
+    text-shadow: #ff1500 3px 3px 3px; 
+  }
+  50% {
+    transform: translatex(5%);
+    color: #ff1500; 
+    text-shadow: white 3px 3px 3px ;
+  }
+  100% {
+    transform: scale(1); 
+    text-shadow: #ff1500 3px 3px 3px; 
+
+  }
+}
+.chitkara p{
+  text-align: center;
+  font-size: 30px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  color:white;
+  background-color:#ff1500;
+  padding: 10px;
+  font-weight: bolder;
+  position: absolute;
+  bottom: 50px;
+  right: 50px;
+  animation: Animation 4s ease-in-out infinite;
+}
+@keyframes Animation {
+  0% {
+    transform: scale(1); 
+    }
+  50% {
+    transform: translateX(5%);
+    color: #fa0d0d; 
+    background-color: white ;
+  }
+  100% {
+    transform: scale(1); 
+
+  }
+}
+.videos{
+  width: 100%;
+  overflow: hidden;
+  height: 500px;
+  position: relative;
+}
+.videos video{
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+
+
+.bgobjectives {
+  background-image: url(sdgbg.jpg);
+  padding: 50px;
+}
+
+.block {
+  background-color: #000000d5;
+  padding: 12px;
+}
+.paraobj {
+  text-align: justify;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+}
+
+.paraobj p {
+  color: ghostwhite;
+  font-size: 65px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-weight: bold;
+  text-align: left;
+  transition: all 1.5s ease-in-out;
+  padding-bottom: 8px;
+  background: radial-gradient(
+        circle closest-side,
+        currentColor 80%,
+        transparent
+      ) -12px 100% /12px 12px no-repeat,
+    linear-gradient(currentColor 0 0) bottom left / var(--d, 0) 12px no-repeat;
+  transition: 0.3s linear;
+}
+
+.paraobj p:hover {
+  --d: 40%;
+  background-position: 40% 100%, bottom left;
+  font-size: 79px;
+}
+
+.objectives {
+  color:black;
+  font-size: 24px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  padding: 19px;
+  background-color: rgba(231, 244, 217, 0.907);
+  border: solid 2.75px beige;
+  text-align: justify;
+  opacity: 1;
+  transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+}
+
+.objectives:hover {
+  transform: scale(1.1);
+  opacity: 0.7;
+  background-color:#051d40;
+  color: ghostwhite;
+  border: 1px dashed white;
+}
+.objectives ul {
+  margin-left: 12px;
+}
+
+/** Styling for the focus areas **/
+
+.focus {
+  color: ghostwhite;
+  font-size: 65px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-weight: bold;
+  text-align: left;
+  transition: all 1.5s ease-in-out;
+  padding-bottom: 8px;
+  background: radial-gradient(
+        circle closest-side,
+        currentColor 80%,
+        transparent
+      ) -12px 100% /12px 12px no-repeat,
+    linear-gradient(currentColor 0 0) bottom left / var(--d, 0) 12px no-repeat;
+  transition: 0.3s linear;
+}
+
+.focus:hover {
+  font-size: 79px;
+  --d: 40%;
+  background-position: 40% 100%, bottom left;
+}
+
+.pfocus {
+  color: black;
+  font-size: 24px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  padding: 19px;
+  background-color: rgba(231, 244, 217, 0.907);
+  border: 2px solid beige;
+  text-align: justify;
+  opacity: 1;
+  transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+}
+
+.pfocus:hover {
+  transform: scale(1.1);
+  opacity: 0.7;
+  background-color:#051d40;
+  color: ghostwhite;
+  border: 1px dashed white;
+}
+
+.pfocus ul {
+  margin-left: 12px;
+}
+
+/** Styling for SDG's **/
+
+.headsdg {
+  background-image: url(eventsbg.jpg);
+  padding: 50px;
+}
+
+.ghead p:hover {
+  font-size: 79px;
+  --d: 40%;
+  background-position: 40% 100%, bottom left;
+}
+
+.ghead p {
+  color: ghostwhite;
+  font-size: 65px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-weight: bold;
+  text-align: left;
+  transition: all 1.5s ease-in-out;
+  padding-bottom: 8px;
+  background: radial-gradient(
+        circle closest-side,
+        currentColor 80%,
+        transparent
+      ) -12px 100% /12px 12px no-repeat,
+    linear-gradient(currentColor 0 0) bottom left / var(--d, 0) 12px no-repeat;
+  transition: 0.3s linear;
+}
+
+.goals {
+  display: flex;
+  flex-direction: row;
+}
+.goals img {
+  height: 400px;
+  border: solid 4px rgb(81, 168, 230);
+  opacity: 1;
+  transition: transform 0.5s ease-in-out;
+}
+.goals img:hover {
+  background-color: rgb(66, 4, 4);
+  transform: scale(1.1);
+}
+
+.goals p:hover {
+  transform: scale(1.1);
+  background-color:#051d40;
+  color: ghostwhite;
+  border: 1px dashed white;
+}
+
+.goals p {
+  font-size: 22px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-style: oblique;
+  color: rgb(9, 25, 9);
+  background-color: rgba(231, 244, 217, 0.929);
+  padding: 10px;
+  border: 4px solid rgb(152, 197, 121);
+  text-align: center;
+  transition: transform 0.5s ease-in-out;
+}
+
+.bgsus{
+  background-image: url(links.jpg);
+  padding: 55px 80px 55px 80px; 
+}
+
+
+.sus {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  text-align: center;
+  margin-left: 150px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.susblock{
+  background-color: #000000dd;
+}
+
+.sus img:hover {
+  cursor: pointer;
+  background-color: limegreen;
+  transform: scale(1.1);
+}
+.sdgs img {
+  height: 230px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.sdgs {
+  color: whitesmoke;
+  font-size: 24px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  background: linear-gradient(rgb(99, 99, 69) 0 0) 50% calc(-3px - 100%) / var(--d, 0%)
+    200% no-repeat;
+  transition: 0.3s, background-size 0.3s 0.3s;
+}
+.sdgs:hover {
+  --d: 100%;
+  background-position: 50% 0%;
+  color: #fff;
+  transition: 0.3s, background-position 0.3s 0.3s, color 0.3s 0.3s;
+}
+
+/* Styling for Campus Life */
+
+
+.campuslife {
+  display: block;
+  block-size: auto;
+  background-image: url(pic3.jpg);
+  padding: 31px;
+}
+
+.cblock{
+  background-color: #000000d5;
+  margin: 25px;
+}
+
+.camp p{
+  color: ghostwhite;
+  font-size: 65px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-weight: bold;
+  text-align: left;
+  transition: all 1.5s ease-in-out;
+  padding-bottom: 8px;
+  background: radial-gradient(
+        circle closest-side,
+        currentColor 80%,
+        transparent
+      ) -12px 100% /12px 12px no-repeat,
+    linear-gradient(currentColor 0 0) bottom left / var(--d, 0) 12px no-repeat;
+  transition: 0.3s linear;
+}
+
+.camp p:hover {
+  font-size: 79px;
+  --d: 40%;
+  background-position: 40% 100%, bottom left;
+}
+
+.overlay-text p {
+  position: absolute;
+  top: 5060px;
+  left: 850px;
+  transform: translateX(-50%) rotate(-45deg);
+  background-color: rgba(0, 0, 0, 0.295);
+  color: rgb(255, 255, 255);
+  padding: 5px 10px;
+  font-size: 25px;
+  text-align: center;
+  border-radius: 5px;
+  width: 94.5%;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  text-shadow: 2px 2px 2px red;
+}
+
+
+.campus {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.clpic img {
+  height: 330px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.clpic img:hover {
+  background-color: rgb(206, 18, 18);
+  transform: scale(1.1);
+}
+
+.credits {
+  background-color: black;
+  color: white;
+  font-size: 25px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  text-align: right;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  text-align: center;
+}
+.credits:hover{
+  font-size: 35px;
+  transition: all 0.5s ease-in-out;
+  color: rgb(255, 31, 31);
+}
+
+
+/** Styling for FAQ'S **/
+
+.faqhead {
+  display: block;
+  block-size: auto;
+  padding: 55px 80px 55px 80px;
+  background-image: url(faq.jpg);
+}
+
+.faq {
+  
+  background-color: #000000dd;
+color: black;
+  padding: 34px;
+}
+
+.faq h2 {
+  color: ghostwhite;
+  font-size: 65px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-weight: bold;
+  text-align: left;
+  transition: all 1.5s ease-in-out;
+  padding-bottom: 8px;
+  background: radial-gradient(
+        circle closest-side,
+        currentColor 80%,
+        transparent
+      ) -12px 100% /12px 12px no-repeat,
+    linear-gradient(currentColor 0 0) bottom left / var(--d, 0) 12px no-repeat;
+  transition: 0.3s linear;
+}
+
+.faq h2:hover {
+  font-size: 79px;
+  --d: 40%;
+  background-position: 40% 100%, bottom left;
+}
+
+.faqbox:hover {
+  background-color: rgb(3, 58, 9);
+  color: rgb(211, 8, 8);
+}
+
+.faqbox {
+  color: white;
+  display: flex;
+  background-color: rgb(5, 131, 55);
+  padding: 24px;
+  max-width: 70vw;
+  margin: 34px auto;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.faqbox span {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: 25px;
+}
+
+.faqbox span:hover {
+  color: burlywood;
+}
+
+.faqbox a {
+  color: rgb(255, 255, 255);
+}
+
+.faqbox a:hover{
+  color:red;
+}
+
+
+/*sliderrrr*/ 
+
+/* Animation */
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-250px * 7));
+  }
+}
+
+/* Styling */
+.slider {
+  box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
+  height: 300px;
+  position: relative;
+  width: 100%;
+  padding: 10px;
+  margin: 0 auto;
+  overflow: hidden;
+  justify-content: space-between;
+}
+
+.slider::before,
+.slider::after {
+  content: "";
+  position: absolute;
+  height: 100px;
+  width: 200px;
+  z-index: 2;
+  background: linear-gradient(to right, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
+}
+
+.slider::before {
+  left: 0;
+  top: 0;
+}
+
+.slider::after {
+  right: 0;
+  top: 0;
+  transform: rotateZ(180deg);
+}
+
+.slide-track {
+  display: flex;
+  animation: scroll 40s linear infinite;
+  width: calc(250px * 14); /* Adjust for the number of slides (7 visible + 7 duplicates) */
+}
+
+.slide {
+  height: 100px;
+  width: 250px;
+  flex-shrink: 0;
+}
+
+
+
+/* Styling for footer of the website*/
+
+.contact{
+  text-align: justify;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+}
+
+.contact p{
+  color: ghostwhite;
+  font-size: 65px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-weight: bold;
+  text-align: left;
+  transition: all 1.5s ease-in-out;
+  padding-bottom: 8px;
+  background: radial-gradient(
+        circle closest-side,
+        currentColor 80%,
+        transparent
+      ) -12px 100% /12px 12px no-repeat,
+    linear-gradient(currentColor 0 0) bottom left / var(--d, 0) 12px no-repeat;
+  transition: 0.3s linear;
+}
+
+.contact p:hover {
+  font-size: 79px;
+  --d: 40%;
+  background-position: 40% 100%, bottom left;
+}
+
+
+.bgcontact {
+  background-image: url(contact.jpg);
+}
+
+.footer {
+  color: rgba(0, 0, 0, 0.486);
+  margin: auto;
+  max-width: 70vw;
+  padding: 13px;
+  justify-content: space-evenly;
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: 2fr 2fr 2fr;
+  transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+
+}
+.footer:hover{
+  transform: scale(1.1);
+}
+
+.footer-item {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  color: ghostwhite;
+  background-color: rgb(206, 18, 18);
+  text-align: center;
+  justify-content: space-evenly;
+  border: solid 6px black;
+  transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+.footer-item:hover{
+  transform: scale(1.3);
+  opacity: 0.9;
+}
+.foot-panel4 {
+  background-color: #0f1111;
+  color: white;
+  height: 30px;
+  font-size: 16px;
+  text-align: center;
+  justify-content: space-evenly;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.pages {
+  padding-top: 5px;
+}
