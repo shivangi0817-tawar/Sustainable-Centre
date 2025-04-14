@@ -1,0 +1,169 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body, html {
+  height: 100%; 
+}
+.bg{
+  background-image: url(blogbg.png);
+}
+
+
+.tips p {
+  color: rgb(0, 0, 0);
+  font-size: 65px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-weight: bold;
+  text-align: center;
+  transition: all 1.5s ease-in-out;
+  padding-bottom: 8px;
+  background: radial-gradient(
+        circle closest-side,
+        currentColor 80%,
+        transparent
+      ) -12px 100% /12px 12px no-repeat,
+    linear-gradient(currentColor 0 0) bottom left / var(--d, 0) 12px no-repeat;
+  transition: 0.3s linear;
+  padding: 10px;
+  text-shadow: 4px 4px 4px gray;
+}
+
+.tips p:hover {
+  font-size: 79px;
+  --d: 60%;
+  background-position: 80% 100%, bottom center;
+  text-shadow: 4px 4px 4px rgb(83, 199, 65);
+}
+
+
+.tips-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  transition: transform 0.3s ease; 
+}
+
+.tip-item {
+  position: relative;
+  width: 125px;
+  padding: 10px;
+  text-align: center;
+  cursor: pointer;
+  background-color:blanchedalmond;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, background-color 0.3s ease,
+    box-shadow 0.3s ease;
+
+}
+
+.tip-item:hover {
+  transform: translateY(-5px);
+  background-color:#388e3c;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); 
+  
+}
+
+.icon {
+  font-size: 40px;
+  color: #388e3c;
+  transition: transform 0.3s, color 0.3s; 
+}
+
+.tip-text {
+  margin-top: 10px;
+  opacity: 0;
+  transition: opacity 0.3s ease, transform 0.3s ease; 
+  color: #ffffff;
+  font-size: 1rem;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.tip-item:hover .icon {
+  transform: scale(1.2);
+  color: #388e3c;
+}
+
+.tip-item:hover .tip-text {
+  opacity: 1;
+  transform: translateY(10px); 
+}
+
+
+.quiz-form {
+  background-image: url(pic2.jpg);
+  padding: 20px;
+  border-radius: 25px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin-top: 40px;
+  text-align: left;
+  width:70%;
+  margin-left: auto;
+  margin-right: auto;
+  transition: box-shadow 0.3s ease; 
+}
+
+.quiz-form:hover {
+  box-shadow: 0 4px 20px rgba(0, 0, 0); 
+}
+
+.quiz-style {
+  background-color: beige;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.90);
+  margin-top: 40px;
+  text-align: left;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; 
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.quiz-form label {
+  font-size: 20px;
+  color:#183b1a;
+  display: block;
+  margin-bottom: 10px;
+  transition: color 0.3s ease; 
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.quiz-form input[type="radio"] {
+  margin-right: 10px;
+}
+
+.quiz-form button {
+  background-color: #168111;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin-top: 20px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease; 
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size:30px;
+  justify-content: center;
+  text-decoration: underline;
+}
+
+.quiz-form button:hover {
+  background-color:rgb(187, 133, 34); 
+  transform: scale(1.1); 
+}
+
+
+.quiz-style:hover {
+  transform: translateY(-5px); 
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); 
+}
+
+button a{
+  color:white;
+}
